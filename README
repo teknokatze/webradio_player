@@ -1,0 +1,16 @@
+webradio_player
+===============
+
+simple radio player, wrapper around mpv.
+
+- [] add GUI and a better TUI
+- [] use config file to read url list instead of hardcoding
+- [] enable choice between mpv and not mpv:
+  - [] switch to libffmeg or anything not primarily mpv
+  - [] for mpv, switch to libmpv
+
+NOTE
+----
+
+This is heavily broken and has many TODOs as it is a rewrite of a Bash
+script I've used for years. Don't use this until I tag a release.
