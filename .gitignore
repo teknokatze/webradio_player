@@ -1,2 +1,4 @@
 *~
 bin/*
+*.core
+src/radio

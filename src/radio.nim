@@ -149,10 +149,12 @@ while true:
   # play selection
   var c = stdin.readLine()
   var playBack = stations[parseInt(c)]
-  let keyKill = spawn stdin.readLine()
+  # TODO: actually replace this with reading keypress.
+  let readKey = spawn stdin.readLine()
 
   var outp = execCmd("mpv --vd=null --vo=null " & playBack)
  
-  if ^keyKill == "q":
+  if ^readKey == "q":
     quit()
+
   echo outp
